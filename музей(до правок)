@@ -3,37 +3,26 @@ public class Artifact {
     String culture;
     int year;
 static int count = 0;
-  public Artifact(){
-  count ++;
-  this.num = 182;
-
+  public Artifact(int num){
+      this.num = num;
   }
   public Artifact(int num, int year){
-      this.num = 183;
-      this.year = 5;
+      this.num = num;
+      this.year = year;
 
   }
   public Artifact(int num, int year, String culture) {
-      this.num = 184;
-      this.year = 4;
-      this.culture = "Aztecs";
+      this.num = num;
+      this.year = year;
+      this.culture = culture;
   }
       public static void main(String[] args){
-      Artifact Artifact1 = new Artifact();
-      Artifact Artifact2 = new Artifact();
-      Artifact Artifact3 = new Artifact();
-      System.out.println(Artifact1.num);
-      System.out.println(Artifact2.num + Artifact2.year );
-      System.out.println(Artifact3.num + Artifact3.year + Artifact3.culture);
+      Artifact Artifact1 = new Artifact(182);
+      Artifact Artifact2 = new Artifact(183, 5);
+      Artifact Artifact3 = new Artifact(184, 7, "Aztecs");
+      System.out.println("Артифакт номер " + Artifact1.num + ".");
+      System.out.println("Артифакт номер " + Artifact2.num + ". Век - " + Artifact2.year + ".");
+      System.out.println("Артифакт номер " + Artifact3.num + ". Век - " + Artifact3.year + ". Культура - " + Artifact3.culture + ".");
   }
 
 }
-   /* public static void main(String[] args) {
-
-        Cat streetCat1 = new Cat();
-        Cat streetCat2 = new Cat();
-        System.out.println(streetCat1.name);
-        System.out.println(streetCat2.name);
-        }
-        }
-        */
