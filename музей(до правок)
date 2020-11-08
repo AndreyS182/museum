@@ -1,0 +1,23 @@
+public class Artifact {
+    int num;
+    String culture;
+    int year;
+static int count = 0;
+  public Artifact(){
+  count ++;
+  this.num = 182;
+  System.out.println("Артифакт - " + num);
+  }
+  public Artifact(int num, int year){
+      this.num = 183;
+      this.year = 5;
+      System.out.println("Артифакт - " + num + "Век - " + year);
+  }
+  public Artifact(int num, int year, String culture){
+      this.num = 184;
+      this.year = 4;
+      this.culture = "Aztecs";
+      System.out.println("Артифакт - " + num + "Век - " + year + "Культура - " + culture);
+  }
+
+}
